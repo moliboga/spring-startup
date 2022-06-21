@@ -23,7 +23,7 @@ public class Component1 implements ApplicationRunner {
     public void run(ApplicationArguments args) {
         System.out.println(context.getBean(Component2.class).getStrField());
     }
-    
+
     public Component1(Component2 component2){
         this.component2 = component2;
         LOG.info("Get Component2 strField from " + Component1.class.getSimpleName() + " = "

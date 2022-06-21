@@ -8,7 +8,7 @@ import javax.annotation.PostConstruct;
 import java.util.logging.Logger;
 
 @Component
-//@Scope(value = "prototype")
+@Scope(value = "prototype")
 public class Component2 implements InitializingBean {
 
     private static final Logger LOG
